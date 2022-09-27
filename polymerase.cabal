@@ -1,0 +1,34 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           polymerase
+version:        0.1.0.0
+homepage:       https://github.com/Yury-Zakharov/polymerase
+author:         Yury Zakharov
+maintainer:     colonelcolt@gmail.com
+copyright:      2022 Yury Zakharov
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable polymerase
+  main-is: Main.hs
+  other-modules:
+      Paths_polymerase
+  hs-source-dirs:
+      src
+  default-extensions:
+      OverloadedStrings
+  ghc-options: -fwarn-incomplete-patterns -threaded
+  build-depends:
+      base >=4.7 && <5
+    , data-default
+    , lens
+    , monomer
+    , random
+    , text
+    , text-show
+  default-language: Haskell2010

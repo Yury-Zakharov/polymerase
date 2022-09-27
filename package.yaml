@@ -1,0 +1,32 @@
+name:                polymerase
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/Yury-Zakharov/polymerase
+#license:             
+author:              Yury Zakharov
+maintainer:          colonelcolt@gmail.com
+copyright:           2022 Yury Zakharov
+#category:
+extra-source-files:
+- README.md
+
+default-extensions:
+- OverloadedStrings
+
+dependencies:
+  - base >= 4.7 && < 5
+  - data-default
+  - lens
+  - monomer
+  - text
+  - text-show
+  - random
+
+executables:
+  polymerase:
+    source-dirs:      src
+    main:             Main.hs
+    ghc-options:
+    - -fwarn-incomplete-patterns
+    - -threaded
